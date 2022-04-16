@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F607B3F0-F08B-45BF-8367-335FD8C17F8E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MonitoringAndInventory</RootNamespace>
+    <AssemblyName>MonitoringAndInventory</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Borrow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Borrow.Designer.cs">
+      <DependentUpon>Borrow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditItems.Designer.cs">
+      <DependentUpon>EditItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdmin.Designer.cs">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditUsers.Designer.cs">
+      <DependentUpon>frmEditUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmfaculty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmfaculty.Designer.cs">
+      <DependentUpon>frmfaculty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInventory.Designer.cs">
+      <DependentUpon>frmInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainUsers.Designer.cs">
+      <DependentUpon>frmMainUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReports.Designer.cs">
+      <DependentUpon>frmReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSTockout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSTockout.Designer.cs">
+      <DependentUpon>frmSTockout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReturnTools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnTools.Designer.cs">
+      <DependentUpon>ReturnTools.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SQLConnect.cs" />
+    <EmbeddedResource Include="Borrow.resx">
+      <DependentUpon>Borrow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditItems.resx">
+      <DependentUpon>EditItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdmin.resx">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditUsers.resx">
+      <DependentUpon>frmEditUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmfaculty.resx">
+      <DependentUpon>frmfaculty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInventory.resx">
+      <DependentUpon>frmInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainUsers.resx">
+      <DependentUpon>frmMainUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReports.resx">
+      <DependentUpon>frmReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSTockout.resx">
+      <DependentUpon>frmSTockout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReturnTools.resx">
+      <DependentUpon>ReturnTools.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\CSTC Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="The Icons\Quote.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="The Icons\Search.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="The Icons\Add Tab.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="The Icons\Publish.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="The Icons\Contacts.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="The Icons\Write.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="The Icons\Delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="The Icons\List.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="The Icons\Table 1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="The Icons\Download.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="The Icons\Back 2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="The Icons\Add Card.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="The Icons\Link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="The Icons\Spell.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="The Icons\Save.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="The Icons\Stop 2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="The Icons\Security.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="The Icons\Print.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="The Icons\Refresh.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\add-user-3-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\faculty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\invoice-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\search-9-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\inventory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\stockout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
